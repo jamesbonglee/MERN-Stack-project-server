@@ -4,10 +4,19 @@
    "description": "make page",
    "main": "index.js",
    "scripts": {
-      "start": "nodemon index.js"
+      "start": "nodemon --exec babel-node index.js"
    },
    "dependencies": {
-      "express": "^4.17.1",
+      "@babel/cli": "^7.1.5",
+      "@babel/core": "^7.12.3",
+      "@babel/node": "^7.12.1",
+      "@babel/polyfill": "^7.12.1",
+      "@babel/preset-env": "^7.12.1",
+      "core-js": "^3.6.5",
+      "express": "^4.17.1"
+   },
+   "devDependencies": {
       "nodemon": "^2.0.7"
-   }
+   },
+   "type": "module"
 }
